@@ -49,6 +49,9 @@ public class Puffendui extends Hogwarts {
     }
 
     public void setIndustriousness(int industriousness) {
+        if (industriousness < 0 || industriousness > 100) {
+            System.out.println(" Неверное знаяение");
+        }
         this.industriousness = industriousness;
     }
 
@@ -57,6 +60,9 @@ public class Puffendui extends Hogwarts {
     }
 
     public void setLoyalty(int loyalty) {
+        if (loyalty < 0 || loyalty > 100) {
+            System.out.println(" Неверное знаяение");
+        }
         this.loyalty = loyalty;
     }
 
@@ -65,6 +71,9 @@ public class Puffendui extends Hogwarts {
     }
 
     public void setHonesty(int honesty) {
+        if (honesty < 0 || honesty > 100) {
+            System.out.println(" Неверное знаяение");
+        }
         this.honesty = honesty;
     }
 }

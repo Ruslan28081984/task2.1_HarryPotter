@@ -51,14 +51,23 @@ public class Gryffindor extends Hogwarts {
 
 
     public void setHonor(int honor) {
+        if (honor < 0 || honor > 100) {
+            System.out.println(" Неверное знаяение");
+        }
         this.honor = honor;
     }
 
     public void setNobility(int nobility) {
+        if (nobility < 0 || nobility > 100) {
+            System.out.println(" Неверное знаяение");
+        }
         this.nobility = nobility;
     }
 
     public void setBravery(int bravery) {
+        if (bravery < 0 || bravery > 100) {
+            System.out.println(" Неверное знаяение");
+        }
         this.bravery = bravery;
     }
 }

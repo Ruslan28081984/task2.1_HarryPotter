@@ -60,6 +60,9 @@ public class Kogtevran extends Hogwarts {
     }
 
     public void setMind(int mind) {
+        if (mind < 0 || mind > 100) {
+            System.out.println(" Неверное знаяение");
+        }
         this.mind = mind;
     }
 
@@ -68,6 +71,9 @@ public class Kogtevran extends Hogwarts {
     }
 
     public void setWisdom(int wisdom) {
+        if (wisdom < 0 || wisdom > 100) {
+            System.out.println(" Неверное знаяение");
+        }
         this.wisdom = wisdom;
     }
 
@@ -76,6 +82,9 @@ public class Kogtevran extends Hogwarts {
     }
 
     public void setCreativity(int creativity) {
+        if (creativity < 0 || creativity > 100) {
+            System.out.println(" Неверное знаяение");
+        }
         this.creativity = creativity;
     }
 
@@ -84,6 +93,9 @@ public class Kogtevran extends Hogwarts {
     }
 
     public void setWit(int wit) {
+        if (wit< 0 || wit > 100) {
+            System.out.println(" Неверное знаяение");
+        }
         this.wit = wit;
     }
 }

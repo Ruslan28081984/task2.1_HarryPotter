@@ -63,6 +63,9 @@ public class Slizerin extends Hogwarts {
     }
 
     public void setTrick(int trick) {
+        if (trick < 0 || trick > 100) {
+            System.out.println(" Неверное знаяение");
+        }
         this.trick = trick;
     }
 
@@ -71,6 +74,9 @@ public class Slizerin extends Hogwarts {
     }
 
     public void setDetermination(int determination) {
+        if (determination < 0 || determination > 100) {
+            System.out.println(" Неверное знаяение");
+        }
         this.determination = determination;
     }
 
@@ -79,6 +85,9 @@ public class Slizerin extends Hogwarts {
     }
 
     public void setAmbition(int ambition) {
+        if (ambition < 0 || ambition > 100) {
+            System.out.println(" Неверное знаяение");
+        }
         this.ambition = ambition;
     }
 
@@ -87,6 +96,9 @@ public class Slizerin extends Hogwarts {
     }
 
     public void setResourcefulness(int resourcefulness) {
+        if (resourcefulness < 0 || resourcefulness > 100) {
+            System.out.println(" Неверное знаяение");
+        }
         this.resourcefulness = resourcefulness;
     }
 
@@ -95,6 +107,9 @@ public class Slizerin extends Hogwarts {
     }
 
     public void setAuthoritativeness(int authoritativeness) {
+        if (authoritativeness < 0 || authoritativeness > 100) {
+            System.out.println(" Неверное знаяение");
+        }
         this.authoritativeness = authoritativeness;
     }
 }
